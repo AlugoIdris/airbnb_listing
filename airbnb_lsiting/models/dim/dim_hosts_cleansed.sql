@@ -1,3 +1,9 @@
+{{
+  config(
+    materialized = 'view'
+    )
+}}
+
 WITH src_hosts AS (
     SELECT
         *
@@ -15,3 +21,4 @@ SELECT
     updated_at
 FROM
     src_hosts
+
